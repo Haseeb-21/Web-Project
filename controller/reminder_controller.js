@@ -43,21 +43,21 @@ let remindersController = {
   update: (req, res) => {
     // implement this code
     let reminderToEdit = req.params.id;
+    let completion = (req.body.completed == "true")
     let edit = {
-      id: reminderToEdit.id,
+      id: reminderToEdit,
       title: req.body.title,
       description: req.body.description,
-      // This may not update the completed status yet
-      completed: reminderToEdit.completed,
+      completed: completion,
     }
-    database.cindy.reminders[reminderToEdit.id-1] = edit;
+    database.cindy.reminders[reminderToEdit-1] = edit;
     res.redirect("/reminders");
   },
 
   delete: (req, res) => {
     // implement this code
     let reminderIndex = req.params.id;
-    database.cindy.reminders.splice(reminderIndex.id-1)
+    database.cindy.reminders.splice(reminderIndex-1)
     res.redirect("/reminders");
   },
 };
