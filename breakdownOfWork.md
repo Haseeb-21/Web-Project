@@ -4,8 +4,8 @@ March 9th (First Sprint Complete)
 
 Ivan Chen:
 I worked on the following tasks:
-1. update - This task is responsible for updating reminders.
-2. delete - This task is responsible for deleting reminders.
+1. finished update function - This is responsible for updating reminders.
+2. finished delete function - This is responsible for deleting reminders.
 
 Haseeb Murtaza:
 I worked on the following tasks:
