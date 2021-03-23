@@ -11,7 +11,7 @@ Haseeb Murtaza:
 I worked on the following tasks:
 1. Made a version of the delete function - This task is responsible for deleting reminders.
 2. Debugging for the final versions of delete and update
-3. 
+3. Attempted to implement local authentication, but it still needs work. I needed to rewatch the passport lab lecture and read the documentation.
 
 
 
