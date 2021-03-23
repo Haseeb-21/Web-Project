@@ -10,7 +10,7 @@ I worked on the following tasks:
 Haseeb Murtaza:
 I worked on the following tasks:
 1. Made a version of the delete function - This task is responsible for deleting reminders.
-2. Debugging for the final version of delete 
+2. Debugging for the final versions of delete and edit
 3. 
 
 
