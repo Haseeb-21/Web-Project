@@ -37,6 +37,14 @@ app.get("/login", authController.login);
 app.post("/register", authController.registerSubmit);
 app.post("/login", authController.loginSubmit);
 
+
+const passport = require("./middleware/passport");
+app.use(express.json());
+app.use(expressLayouts);
+app.use(express.urlencoded({ extended: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.listen(3001, function () {
   console.log(
     "Server running. Visit: localhost:3001/reminders in your browser 🚀"
