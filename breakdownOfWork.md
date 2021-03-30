@@ -1,6 +1,6 @@
 # Web-Project
 
-March 9th (First Sprint Complete)
+March 23rd (First Sprint Complete)
 
 Ivan Chen:
 I worked on the following tasks:
@@ -17,4 +17,10 @@ William Pham:
 I worked on the following tasks:
 1. Tried the authentication
 2. Helped Haseeb on authentication by researching
+
+March 30 (week 2)
+Haseeb Murtaza:
+I worked on the following tasks:
+1. Researched the different API's we can implement
+
 
