@@ -24,4 +24,7 @@ Haseeb Murtaza:
 I worked on the following tasks:
 1. Researched the different API's we can implement
 
+Ivan Chen:
+I worked on the following tasks:
+Fixed a bug with id allocation when creating new reminders.
 
