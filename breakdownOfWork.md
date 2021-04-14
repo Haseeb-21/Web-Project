@@ -28,3 +28,5 @@ Ivan Chen:
 I worked on the following tasks:
 Fixed a bug with id allocation when creating new reminders.
 
+Week 3
+Haseeb Murtaza: Made fixes to the local authentication index.js and auth_controller.js
