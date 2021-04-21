@@ -3,18 +3,43 @@
     h1 {
         margin-left: 50px;
     }
+    h2 {
+        margin-left: 50px;
+    }
     p {
         margin-left: 60px;
     }
     img {
         width: 5%;
     }
+    .day {
+        float: right;
+    }
 </style>
 <body>
 <h1>Weather <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather03-512.png"></h1>
 <p><b><%= data.days[0].datetime%> &nbsp; <%= data.resolvedAddress%></b></p>
-<p><b></b></p>
-<p class="weather">Temperature: <%= data.currentConditions.temp%> °C</p>
-<p class="weather">Feels Like: <%= data.currentConditions.feelslike%> °C</p>
-<p class="weather">Conditions: <%= data.currentConditions.conditions%></p>
+<p>Temperature: <%= data.currentConditions.temp%> °C</p>
+<p>Feels Like: <%= data.currentConditions.feelslike%> °C</p>
+<p>Conditions: <%= data.currentConditions.conditions%></p>
+
+<h2>3-Day Forecast</h2>
+
+<p><b><%= data.days[1].datetime%></b></p> 
+<p>Temperature: <%= data.days[1].temp%> °C</p>
+<p>Min: <%= data.days[1].tempmin%> °C</p>
+<p>Max: <%= data.days[1].tempmax%> °C</p>
+<p><%= data.days[1].conditions%></p> 
+
+<p><b><%= data.days[2].datetime%></b></p> 
+<p>Temperature: <%= data.days[2].temp%> °C</p>
+<p>Min: <%= data.days[2].tempmin%> °C</p>
+<p>Max: <%= data.days[2].tempmax%> °C</p>
+<p><%= data.days[2].conditions%></p> 
+
+<p><b><%= data.days[3].datetime%></b></p> 
+<p>Temperature: <%= data.days[3].temp%> °C</p>
+<p>Min: <%= data.days[3].tempmin%> °C</p>
+<p>Max: <%= data.days[3].tempmax%> °C</p>
+<p><%= data.days[3].conditions%></p> 
 </body>
