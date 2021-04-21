@@ -31,6 +31,8 @@ let remindersController = {
       id: idNum,
       title: req.body.title,
       description: req.body.description,
+      date: req.body.date,
+      subtask: req.body.subtask,
       completed: false,
     };
     database.cindy.reminders.push(reminder);
@@ -53,6 +55,8 @@ let remindersController = {
       if (database.cindy.reminders[i].id == reminderToEdit) {
         database.cindy.reminders[i].title = req.body.title;
         database.cindy.reminders[i].description = req.body.description;
+        database.cindy.reminders[i].date = req.body.date;
+        database.cindy.reminders[i].subtask = req.body.subtask;
         database.cindy.reminders[i].completed = completion;
       }
     }
