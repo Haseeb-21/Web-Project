@@ -43,6 +43,7 @@ Haseeb Murtaza:
 - Updated index.html. Changed the testimonial pictures and the information about the app.
 - Added a 3-day forecast to the weather page. Shows min/max temperature and the conditions of that day.
 - Added in subtasks and reminder dates. They can be edited and added when creating a new reminder.
+- Added the ability to add a tag for each reminder.
 
 Ivan Chen:
 - Merged weather API into master branch.
