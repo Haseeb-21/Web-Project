@@ -33,6 +33,9 @@ Week 3
 Haseeb Murtaza:
 - Made fixes to the local authentication index.js and auth_controller.js 
 
+Ivan Chen:
+- Fixed bug where sometimes reminders id would become a string.
+
 Week 4
 
 Haseeb Murtaza: 
@@ -45,5 +48,4 @@ Ivan Chen:
 - Changed file structure to use routes.
 - Moved weather API out of reminders directory
 - Fixed bug where sometimes reminders with the same ID may be created
-- Fixed bug where sometimes reminders id would become a string.
 - Parsed through https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css to find suitable css for Create and Edit's submit buttons. Updated the buttons to the corresponding class (btn btn-outline-primary) 
