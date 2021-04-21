@@ -34,7 +34,10 @@ Haseeb Murtaza: Made fixes to the local authentication index.js and auth_control
 
 Week 4
 
-Haseeb Murtaza: Added a weather API to display current temperature, feels-like temperature and weather conditions. To implement this, I needed to rewatch the lecture on API's and search for a suitable API (visualcrossing).
+Haseeb Murtaza: 
+Added a weather API to display current temperature, feels-like temperature and weather conditions. To implement this, I needed to rewatch the lecture on API's and search for a suitable API (visualcrossing).
+
+Updated index.html. Changed the testimonial pictures and the information about the app.
 
 Ivan Chen:
 Merged weather API into master branch.
