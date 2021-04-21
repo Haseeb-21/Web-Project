@@ -4,6 +4,7 @@
 <ul class="list-group">
   <% reminders.forEach(function (reminderItem) { %>
     <li class="list-group-item">
+      <strong><%= reminderItem.date%></strong><br>
       <strong><%= reminderItem.title %>: </strong>
       <%= reminderItem.description %>
       || Completed:
@@ -13,6 +14,7 @@
         <span class="badge badge-danger">False</span>
       <% } %>
       <a class="pull-right" href=<%= "/reminder/" + reminderItem.id %>>View</a>
+      <br>Subtask: <%= reminderItem.subtask %>
     </li>
   <% }) %>
 </ul>
