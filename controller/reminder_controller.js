@@ -1,4 +1,5 @@
 let database = require("../database");
+const fetch = require("node-fetch");
 
 let remindersController = {
   list: (req, res) => {
@@ -11,7 +12,7 @@ let remindersController = {
 
   listOne: (req, res) => {
     let reminderToFind = req.params.id;
-    let searchResult = database.cindy.reminders.find(function (reminder) {
+    let searchResult = database.reminders.find(function (reminder) {
       return reminder.id == reminderToFind;
     });
     if (searchResult != undefined) {
@@ -23,7 +24,7 @@ let remindersController = {
 
   create: (req, res) => {
     let reminder = {
-      id: database.cindy.reminders.length + 1,
+      id: database.cindy.reminders[database.cindy.reminders.length -1].id +1,
       title: req.body.title,
       description: req.body.description,
       completed: false,
@@ -34,7 +35,6 @@ let remindersController = {
 
   edit: (req, res) => {
     let reminderToFind = req.params.id;
-    console.log(reminderToFind)
     let searchResult = database.cindy.reminders.find(function (reminder) {
       return reminder.id == reminderToFind;
     });
@@ -42,6 +42,7 @@ let remindersController = {
   },
 
   update: (req, res) => {
+    // implement this code
     let reminderToEdit = req.params.id;
     let completion = (req.body.completed == "true")
     let edit = {
@@ -63,6 +64,13 @@ let remindersController = {
     } 
     res.redirect("/reminders");
   },
+  getWeather: async (req, res) => {
+    const fetchResponse = await fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Vancouver?unitGroup=metric&key=M5CCD8RWPZRGHP8DJAH4T9A2H")
+    const data = await fetchResponse.json();
+    res.render("reminder/weather", {
+      data
+    })
+  }
 };
 
 module.exports = remindersController;
