@@ -42,4 +42,7 @@ Haseeb Murtaza:
 
 Ivan Chen:
 - Merged weather API into master branch.
-Changed file structure.
+- Changed file structure to use routes.
+- Moved weather API out of reminders directory
+- Fixed bug where sometimes reminders with the same ID may be created
+- Fixed bug where sometimes reminders id would become a string.
