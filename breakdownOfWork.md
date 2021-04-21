@@ -30,7 +30,8 @@ Fixed a bug with id allocation when creating new reminders.
 
 Week 3
 
-Haseeb Murtaza: Made fixes to the local authentication index.js and auth_controller.js
+Haseeb Murtaza: Made fixes to the local authentication index.js and auth_controller.js 
 
 Week 4
-Haseeb Murtaza: Added a weather API to display current temperature and weather conditions. To implement this, I needed to rewatch the lecture on API's and search for a suitable API.
+
+Haseeb Murtaza: Added a weather API to display current temperature, feels-like temperature and weather conditions. To implement this, I needed to rewatch the lecture on API's and search for a suitable API (visualcrossing).
