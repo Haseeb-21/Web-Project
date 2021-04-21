@@ -1,4 +1,5 @@
 let database = require("../database");
+const fetch = require("node-fetch");
 
 let remindersController = {
   list: (req, res) => {
@@ -63,6 +64,13 @@ let remindersController = {
     } 
     res.redirect("/reminders");
   },
+  getWeather: async (req, res) => {
+    const fetchResponse = await fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Vancouver?unitGroup=metric&key=M5CCD8RWPZRGHP8DJAH4T9A2H")
+    const data = await fetchResponse.json();
+    res.render("weather/weather", {
+      data
+    })
+  }
 };
 
 module.exports = remindersController;

@@ -1,0 +1,20 @@
+<style>
+
+    h1 {
+        margin-left: 50px;
+    }
+    p {
+        margin-left: 60px;
+    }
+    img {
+        width: 5%;
+    }
+</style>
+<body>
+<h1>Weather <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather03-512.png"></h1>
+<p><b><%= data.days[0].datetime%> &nbsp; <%= data.resolvedAddress%></b></p>
+<p><b></b></p>
+<p class="weather">Temperature: <%= data.currentConditions.temp%> °C</p>
+<p class="weather">Feels Like: <%= data.currentConditions.feelslike%> °C</p>
+<p class="weather">Conditions: <%= data.currentConditions.conditions%></p>
+</body>
