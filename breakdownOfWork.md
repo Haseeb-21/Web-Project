@@ -38,6 +38,7 @@ Week 4
 Haseeb Murtaza: 
 - Added a weather API to display current temperature, feels-like temperature and weather conditions. To implement this, I needed to rewatch the lecture on API's and search for a suitable API (visualcrossing).
 - Updated index.html. Changed the testimonial pictures and the information about the app.
+- Added a 3-day forecast to the weather page. Shows min/max temperature and the condtions of that day.
 
 Ivan Chen:
 - Merged weather API into master branch.
