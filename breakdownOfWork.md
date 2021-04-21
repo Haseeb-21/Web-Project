@@ -49,3 +49,4 @@ Ivan Chen:
 - Moved weather API out of reminders directory
 - Fixed bug where sometimes reminders with the same ID may be created
 - Parsed through https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css to find suitable css for Create and Edit's submit buttons. Updated the buttons to the corresponding class (btn btn-outline-primary) 
+- Rewrote local authentication using passport lab as a base. Managed to get authentication working, but did not link reminders yet.
