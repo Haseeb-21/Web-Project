@@ -8,7 +8,6 @@ let remindersController = {
 
   new: (req, res) => {
     res.render("reminder/create");
-    console.log("# reminders", database.cindy.reminders.length)
   },
 
   listOne: (req, res) => {
@@ -28,7 +27,6 @@ let remindersController = {
     if (database.cindy.reminders.length != 0){
       idNum = Number(database.cindy.reminders[database.cindy.reminders.length -1].id +1);
     }
-    console.log("id num", idNum)
     let reminder = {
       id: idNum,
       title: req.body.title,
