@@ -17,6 +17,13 @@ const database = [
     email: "jonathan123@gmail.com",
     password: "jonathan123!",
   },
+  {
+    id: 4,
+    name: "Jonathan Chen",
+    email: "123@gmail.com",
+    password: "123",
+    reminders: [{id: 1, title: "abc", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
+  },	
 ];
 
 const userModel = {

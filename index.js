@@ -26,17 +26,14 @@ const passport = require("./middleware/passport");
 const { ensureAuthenticated } = require("./middleware/checkAuth")
 
 // Middleware
-//app.use(express.json());
-// app.use(expressLayouts);
 app.use(passport.initialize());
 app.use(passport.session());
 
 
 // Routes start here
 
-//app.get("/reminders", ensureAuthenticated, reminderController.list);
-
-app.get("/reminders", reminderController.list);
+app.get("/reminders", ensureAuthenticated, reminderController.list);
+//app.get("/reminders", reminderController.list);
 app.use("/reminder", reminderRoute);
 app.use("/auth", authRoute)
 /*

@@ -8,8 +8,8 @@ const localLogin = new LocalStrategy(
     passwordField: "password",
   },
   (email, password, done) => {
-    console.log("we're in the strat")
     const user = userController.getUserByEmailIdAndPassword(email, password);
+    // { id:4, etc etc}
     return user
       ? done(null, user)
       : done(null, false, {

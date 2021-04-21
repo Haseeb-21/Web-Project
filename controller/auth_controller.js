@@ -3,7 +3,6 @@ const passport = require("../middleware/passport");
 
 let authController = {
   login: (req, res) => {
-    console.log("we getting")
     res.render("auth/login");
   },
 
@@ -19,7 +18,6 @@ let authController = {
       successRedirect: "/reminders",
       failureRedirect: "/",
     })
-    console.log("we authenticated")
   },
 
   registerSubmit: (req, res) => {
