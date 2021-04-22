@@ -7,7 +7,8 @@ let authController = {
   },
 
   register: (req, res) => {
-    res.render("auth/register");
+    let email = req.query.email;
+    res.render("auth/register", { email: email });
   },
 
   // login

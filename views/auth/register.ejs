@@ -2,7 +2,13 @@
   <form action="/auth/register" method="POST">
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
-      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <% if (typeof email === typeof undefined) { %>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <% } else { %>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%= email%>" >
+              <% } %>
+      
+
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       <% if (typeof message != typeof undefined) { %>
         <div class="alert-warning"><b><%= message %></b></div>
