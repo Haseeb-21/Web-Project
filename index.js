@@ -6,6 +6,7 @@ const session = require("express-session");
 const reminderController = require("./controller/reminder_controller");
 const reminderRoute = require("./routes/reminderRoute");
 const authRoute = require("./routes/authRoute");
+const socialRoute = require("./routes/socialRoute")
 
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -32,9 +33,8 @@ app.use(passport.session());
 app.get("/reminders", ensureAuthenticated, reminderController.list);
 app.use("/reminder", reminderRoute);
 app.use("/auth", authRoute)
-
+app.use("/social", socialRoute)
 app.get("/weather", ensureAuthenticated, reminderController.getWeather);
-app.get("/friends", ensureAuthenticated, reminderController.friends);
 
 app.listen(3001, function () {
   console.log(

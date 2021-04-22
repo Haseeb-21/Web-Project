@@ -1,6 +1,6 @@
 const express = require("express");
 const reminderController = require("../controller/reminder_controller");
-const { ensureAuthenticated } = require("../middleware/checkAuth")
+const { ensureAuthenticated } = require("../middleware/checkAuth");
 
 const router = express.Router();
 

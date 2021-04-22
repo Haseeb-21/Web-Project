@@ -1,4 +1,3 @@
-//let database = require("../database");
 const fetch = require("node-fetch");
 
 let remindersController = {
@@ -81,9 +80,7 @@ let remindersController = {
       data
     })
   },
-  friends: (req, res) => {
-    res.render("reminder/friends")
-  }
+  
 };
 
 module.exports = remindersController;

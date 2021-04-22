@@ -1,5 +1,4 @@
 const express = require("express");
-const passport = require("../middleware/passport");
 const authController = require("../controller/auth_controller");
 const { forwardAuthenticated } = require("../middleware/checkAuth");
 

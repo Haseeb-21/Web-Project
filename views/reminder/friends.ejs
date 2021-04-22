@@ -1,8 +1,8 @@
 <div class="container">
-    <form action="/reminder" method="POST">
+    <form action="/reminders" method="GET">
       <div class="form-group">
-        <label for="friends">Enter email of friend to add</label>
-        <textarea class="form-control" id="descriptionInput" rows="3" placeholder="Friend" name="friends"></textarea>
+        <label for="friends">Enter an email to add them as a friend!</label>
+        <input name="friend" class="form-control form-control-lg" placeholder="Friend's email">
       </div>
       <button type="submit" class="btn btn-outline-primary">Submit</button>
     </form>

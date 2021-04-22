@@ -38,7 +38,7 @@ let authController = {
         }
         database.push(newUser)
       }
-      let msg = "Success! Please enter your credentials again."
+      let msg = "Success! Please enter your credentials again to log in."
       res.render("auth/login", { message: msg })
     }
   },
