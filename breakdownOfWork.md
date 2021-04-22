@@ -52,3 +52,7 @@ Ivan Chen:
 - Fixed bug where sometimes reminders with the same ID may be created
 - Parsed through https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css to find suitable css for Create and Edit's submit buttons. Updated the buttons to the corresponding class (btn btn-outline-primary) 
 - Rewrote local authentication using passport lab as a base. Managed to get authentication working, but did not link reminders yet.
+- Implemented ensureAuthenticated to limit who can see reminders.
+- Ensured users can now only see their own reminders
+- Moved database out of models/userModel.js and into database.js. Imported the database into userModel.
+- Updated reminders ejs to display user's name.
