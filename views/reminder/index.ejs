@@ -20,8 +20,10 @@
     </li>
   <% }) %>
   <% for (let i=0; i < friendsList.length; i++) { %>
-    <h3><%= names[i] %>'s Reminders:</h3>
     <% let reminderList = friendsList[i] %>
+    <% if (reminderList.length > 0) { %>
+      <h3><%= names[i] %>'s Reminders:</h3>
+    <% } %>
     <% for (let j=0; j < reminderList.length; j++) { %>
       <% let reminderItem = reminderList[j]; %>
         <li class="list-group-item">
