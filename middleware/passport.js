@@ -9,7 +9,6 @@ const localLogin = new LocalStrategy(
   },
   (email, password, done) => {
     const user = userController.getUserByEmailIdAndPassword(email, password);
-    // { id:4, etc etc}
     return user
       ? done(null, user)
       : done(null, false, {
