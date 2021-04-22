@@ -47,6 +47,7 @@ I worked on the following tasks:
 - Added the ability to add a tag for each reminder.
 - Made a new route for adding friends
 - Changed weather api to only allow authenticated users to view it.
+- Added a sign up button on the login page. It redirects you to the registration page.
 
 ### Ivan Chen:
 - Merged weather API into master branch.
