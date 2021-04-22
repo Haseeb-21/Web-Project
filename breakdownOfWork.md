@@ -71,3 +71,11 @@ I worked on the following tasks:
 - Researched how to change the value of an attribute on ejs. Discovered variables are not interpreted as string literals so I was missing quotations (value="<%= var%>" instead of value=<%= var%>)
 - Implemented GET method when pressing button to have what the user typed on index.html appear as on the register page.
 - Added logout button and functionality to navbar.
+- Coded add friends capability. Add friends using a text box.
+- Added error checking so you can't add the same friend twice, can't add yourself as a friend, and the use must exist.
+- Added error and success messsages when adding friends.
+- Modified view to show list of friends on friends page.
+- Friends' emails are now stored in a list as part of the user object.
+- Added ability to see friends' reminders.
+- Split friends' reminders into nested lists of reminders to be able to identify who each reminder belongs to.
+- Added a header that says which reminder belongs to which friend.
