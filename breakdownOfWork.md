@@ -61,4 +61,9 @@ Ivan Chen:
 - Updated reminders ejs to display user's name.
 - Added user creation functionality.
 - Modified register EJS to indicate if trying to register with an email already in use.
+- Added css from stackpath for the notification. Chose to add notification to class alert-warning.
 - Modified login EJS to prompt user to retype credentials after successfully registering.
+- Added css from stackpath for the notification. Chose to add notification to class alert-success.
+- Modified index.html to make sign up button redirect to register page.
+- Researched how to change the value of an attribute on ejs. Discovered variables are not interpreted as string literals so I was missing quotations (value="<%= var%>" instead of value=<%= var%>)
+- Implemented GET method when pressing button to have what the user typed on index.html appear as on the register page.
