@@ -80,6 +80,9 @@ let remindersController = {
     res.render("weather/weather", {
       data
     })
+  },
+  friends: (req, res) => {
+    res.render("reminder/friends")
   }
 };
 
