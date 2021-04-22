@@ -80,4 +80,3 @@ I worked on the following tasks:
 - Split friends' reminders into nested lists of reminders to be able to identify who each reminder belongs to.
 - Added a header that says which reminder belongs to which friend.
 - Added a condition to only display friend's name if friend has reminders to display.
-- 
