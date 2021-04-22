@@ -1,9 +1,9 @@
-let database = require("../database");
+//let database = require("../database");
 const fetch = require("node-fetch");
 
 let remindersController = {
   list: (req, res) => {
-    user = req.user.name
+    console.log(req.user)
     res.render("reminder/index", { reminders: req.user.reminders, user: req.user.email.split("@")[0] });
   },
 

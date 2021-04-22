@@ -5,7 +5,6 @@ const Database = [
     email: "jimmy123@gmail.com",
     password: "jimmy123!",
 	reminders: [{id: 1, title: "jimmy", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
-
   },
   {
     id: 2,
@@ -13,7 +12,6 @@ const Database = [
     email: "johnny123@gmail.com",
     password: "johnny123!",
 	reminders: [{id: 1, title: "johnny", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
-
   },
   {
     id: 3,
@@ -21,7 +19,6 @@ const Database = [
     email: "jonathan123@gmail.com",
     password: "jonathan123!",
 	reminders: [{id: 1, title: "jonathan", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
-
   },
   {
     id: 4,
