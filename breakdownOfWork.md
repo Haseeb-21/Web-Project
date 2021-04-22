@@ -45,6 +45,8 @@ I worked on the following tasks:
 - Added a 3-day forecast to the weather page. Shows min/max temperature and the conditions of that day.
 - Added in subtasks and reminder dates. They can be edited and added when creating a new reminder.
 - Added the ability to add a tag for each reminder.
+- Made a new route for adding friends
+- Changed weather api to only allow authenticated users to view it.
 
 ### Ivan Chen:
 - Merged weather API into master branch.
