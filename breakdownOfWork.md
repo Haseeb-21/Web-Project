@@ -52,7 +52,7 @@ I worked on the following tasks:
 - Moved weather API out of reminders directory.
 - Parsed through https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css to find suitable css for Create and Edit's submit buttons. Updated the buttons to the corresponding class (btn btn-outline-primary) .
 - Rewatched 2h passport video.
-- Rewrote local authentication using passport lab as a base. 
+- Rewrote local authentication using passport lab as a base. It actually works now.
 - Added userController, middleware and userModel from passport lab.
 - Managed to get authentication working, but did not link reminders yet.
 - Implemented ensureAuthenticated to limit who can see reminders.
