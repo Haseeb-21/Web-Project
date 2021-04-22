@@ -59,3 +59,6 @@ Ivan Chen:
 - Ensured users can now only see their own reminders.
 - Moved database out of models/userModel.js and into database.js. Imported the database into userModel.
 - Updated reminders ejs to display user's name.
+- Added user creation functionality.
+- Modified register EJS to indicate if trying to register with an email already in use.
+- Modified login EJS to prompt user to retype credentials after successfully registering.
