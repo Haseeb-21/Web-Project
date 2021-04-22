@@ -1,0 +1,21 @@
+<div class="container">
+    <form action="/social/friends/add" method="POST">
+      <div class="form-group">
+        <label for="friends">Enter an email to add them as a friend!</label>
+        <input name="email" class="form-control form-control-lg" placeholder="Friend's email">
+      </div>
+      <% if (typeof message != typeof undefined) { %>
+        <p class="alert-warning" style="text-align: center;"><b><%= message %></b></p>
+      <% } %>
+      <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </form>
+    <h2>Your friends</h2>
+    <ul>
+      <% friends.forEach(function (friend){ %>
+        
+        <li>
+          <%= friend %>
+        </li>
+      <% }) %>
+  </ul>
+  </div>

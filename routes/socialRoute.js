@@ -5,6 +5,6 @@ const { ensureAuthenticated } = require("../middleware/checkAuth");
 const router = express.Router();
 
 router.get("/friends", ensureAuthenticated, socialController.showFriends);
-router.post("/friends", ensureAuthenticated, socialController.addFriend);
+router.post("/friends/add", ensureAuthenticated, socialController.addFriend);
 
 module.exports = router;

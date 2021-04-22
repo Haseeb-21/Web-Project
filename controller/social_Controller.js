@@ -1,10 +1,27 @@
+const database = require("../database");
+
 let socialController = {
 
     showFriends: (req, res) => {
-        res.render("reminder/friends")
+        res.render("social/friends", { friends: req.user.friends })
     },
     addFriend: (req, res) => {
-        res.render("reminder/friends")
+        let msg = ""
+        friend = req.body.email
+        if (req.user.friends.includes(req.body.email)) {
+            msg = "User is already your friend."
+        } else {
+            for (let i=0; i < database.length; i++) {
+                if (friend == database[i].email) {
+                    req.user.friends.push(friend);
+                    msg = "User successfully added."
+                    break;
+                } else {
+                    msg = "User does not exist."
+                }
+            }
+        }
+        res.render("social/friends", { friends: req.user.friends, message: msg })
     },
 }
 

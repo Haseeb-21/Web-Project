@@ -24,7 +24,7 @@ const Database = [
     id: 4,
     email: "123@gmail.com",
     password: "123",
-	friends: [1, 3],
+	friends: ["Friend A", "Friend B", "These should be emails"],
     reminders: [{id: 1, title: "abc", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
   },	
 ];
