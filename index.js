@@ -42,7 +42,8 @@ app.get("/login", authController.login);
 app.post("/register", authController.registerSubmit);
 app.post("/login", authController.loginSubmit);
 */
-app.get("/weather", reminderController.getWeather);
+app.get("/weather", ensureAuthenticated, reminderController.getWeather);
+app.get("/friends", ensureAuthenticated, reminderController.friends);
 
 app.listen(3001, function () {
   console.log(
