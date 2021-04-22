@@ -14,7 +14,7 @@ let authController = {
   loginSubmit: 
     passport.authenticate("local", {
       successRedirect: "/reminders",
-      failureRedirect: "/weather",
+      failureRedirect: "/auth/login",
     })
   ,
 
