@@ -53,11 +53,11 @@ I worked on the following tasks:
 - Merged weather API into master branch.
 - Changed file structure to use routes.
 - Moved weather API out of reminders directory.
-- Parsed through https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css to find suitable css for Create and Edit's submit buttons. Updated the buttons to the corresponding class (btn btn-outline-primary) .
+- Parsed through https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css to find suitable css for Create and Edit's submit buttons. Updated the buttons to the corresponding class (btn btn-outline-primary).
 - Rewatched 2h passport video.
 - Rewrote local authentication using passport lab as a base. It actually works now.
 - Added userController, middleware and userModel from passport lab.
-- Managed to get authentication working, but did not link reminders yet.
+- Authentication is working, but not linked to reminders yet.
 - Implemented ensureAuthenticated to limit who can see reminders.
 - Ensured users can now only see their own reminders.
 - Moved database out of models/userModel.js and into database.js. Imported the database into userModel.
@@ -70,3 +70,4 @@ I worked on the following tasks:
 - Modified index.html to make sign up button redirect to register page.
 - Researched how to change the value of an attribute on ejs. Discovered variables are not interpreted as string literals so I was missing quotations (value="<%= var%>" instead of value=<%= var%>)
 - Implemented GET method when pressing button to have what the user typed on index.html appear as on the register page.
+- Added logout button and functionality to navbar.
