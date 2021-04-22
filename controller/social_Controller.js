@@ -8,7 +8,10 @@ let socialController = {
     addFriend: (req, res) => {
         let msg = ""
         friend = req.body.email
-        if (req.user.friends.includes(req.body.email)) {
+        if (req.user.email == req.body.email ){
+            msg = "You can not add yourself as a friend."
+        }
+        else if (req.user.friends.includes(req.body.email)) {
             msg = "User is already your friend."
         } else {
             for (let i=0; i < database.length; i++) {

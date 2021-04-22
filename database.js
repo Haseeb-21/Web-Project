@@ -11,7 +11,7 @@ const Database = [
     email: "johnny123@gmail.com",
     password: "johnny123!",
 	friends: [],
-	reminders: [{id: 1, title: "johnny", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
+	reminders: [{id: 1, title: "johnny", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}, {id: 2, title: "johnny2", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const Database = [
     id: 4,
     email: "123@gmail.com",
     password: "123",
-	friends: ["Friend A", "Friend B", "These should be emails"],
+	friends: ["Friend A", "johnny123@gmail.com", "These should be emails"],
     reminders: [{id: 1, title: "abc", description: "abcabc", subtask: "Eat food", date: "April 4, 2021", tag: "school", completed: false}],
   },	
 ];

@@ -34,6 +34,7 @@ let authController = {
           id: database.length + 1,
           email: req.body.email,
           password: req.body.password,
+          friends: [],
           reminders: [],
         }
         database.push(newUser)

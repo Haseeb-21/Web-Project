@@ -1,8 +1,20 @@
 const fetch = require("node-fetch");
+const database = require("../database");
 
 let remindersController = {
   list: (req, res) => {
-    res.render("reminder/index", { reminders: req.user.reminders, user: req.user.email.split("@")[0], friends: [] });
+    let friendReminders = []
+    let friendNames = []
+    for (let i=0; i < req.user.friends.length; i++){
+      for (let j=0; j < database.length; j++ ){
+        if (req.user.friends[i] == database[j].email){
+          friendNames.push(database[j].email)
+          friendReminders.push(database[j].reminders);
+          break;
+        }
+      }
+    }
+    res.render("reminder/index", { reminders: req.user.reminders, user: req.user.email.split("@")[0], friendsList: friendReminders, names: friendNames});
   },
 
   new: (req, res) => {

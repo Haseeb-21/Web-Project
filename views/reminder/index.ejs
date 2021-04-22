@@ -19,24 +19,26 @@
       <br>Tag: <span class="badge badge-success"><%= reminderItem.tag %></span>
     </li>
   <% }) %>
-  <% friends.forEach(function (friend){ %>
-    <% friend.reminders.forEach(function(reminderItem){ %>
-      <li class="list-group-item">
-        <strong><%= reminderItem.date%></strong><br>
-        <strong><%= reminderItem.title %>: </strong>
-        <%= reminderItem.description %>
-        || Completed:
-        <% if (reminderItem.completed == true) { %>
-          <span class="badge badge-success">True</span>
-        <% } else if (reminderItem.completed == false) { %>
-          <span class="badge badge-danger">False</span>
+  <% for (let i=0; i < friendsList.length; i++) { %>
+    <h3><%= names[i] %>'s Reminders:</h3>
+    <% let reminderList = friendsList[i] %>
+    <% for (let j=0; j < reminderList.length; j++) { %>
+      <% let reminderItem = reminderList[j]; %>
+        <li class="list-group-item">
+          <strong><%= reminderItem.date%></strong><br>
+          <strong><%= reminderItem.title %>: </strong>
+          <%= reminderItem.description %>
+          || Completed:
+          <% if (reminderItem.completed == true) { %>
+            <span class="badge badge-success">True</span>
+          <% } else if (reminderItem.completed == false) { %>
+            <span class="badge badge-danger">False</span>
+          <% } %>
+          <br>Subtask: <%= reminderItem.subtask %>
+          <br>Tag: <span class="badge badge-success"><%= reminderItem.tag %></span>
+        </li>
         <% } %>
-        <a class="pull-right" href=<%= "/reminder/" + reminderItem.id %>>View</a>
-        <br>Subtask: <%= reminderItem.subtask %>
-        <br>Tag: <span class="badge badge-success"><%= reminderItem.tag %></span>
-      </li> 
-    <% }) %>
-  <% }) %>
+  <% } %>
 </ul>
 
 </div>
