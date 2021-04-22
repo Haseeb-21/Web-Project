@@ -8,11 +8,6 @@ const router = express.Router();
 router.get("/register", authController.register);
 router.get("/login", forwardAuthenticated, authController.login);
 router.post("/register", authController.registerSubmit);
-router.post("/login",
-    passport.authenticate("local", {
-        successRedirect: "../reminders",
-        failureRedirect: "./login",
-    })
-);
+router.post("/login", authController.loginSubmit);
 
 module.exports = router;

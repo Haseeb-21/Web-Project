@@ -1,4 +1,7 @@
 <div class="container">
+  <% if (typeof message != typeof undefined) { %>
+    <div class="alert-success" style="text-align: center;"><b><%= msg %></b></div>
+  <% } %>
     <form action="/auth/login" method="POST">
       <div class="form-group">
         <h3 class="text-center">Login</h3>

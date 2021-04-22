@@ -3,13 +3,11 @@ const fetch = require("node-fetch");
 
 let remindersController = {
   list: (req, res) => {
-    console.log(req.user)
     res.render("reminder/index", { reminders: req.user.reminders, user: req.user.email.split("@")[0] });
   },
 
   new: (req, res) => {
     res.render("reminder/create");
-    console.log(req.user.email)
   },
 
   listOne: (req, res) => {

@@ -33,7 +33,6 @@ app.use(passport.session());
 // Routes start here
 
 app.get("/reminders", ensureAuthenticated, reminderController.list);
-//app.get("/reminders", reminderController.list);
 app.use("/reminder", reminderRoute);
 app.use("/auth", authRoute)
 /*
