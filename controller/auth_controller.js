@@ -42,6 +42,10 @@ let authController = {
       res.render("auth/login", { message: msg })
     }
   },
+  logout: (req, res) => {
+    req.logout();
+    res.redirect('/');
+  },
 };
 
 module.exports = authController;

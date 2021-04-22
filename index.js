@@ -4,7 +4,6 @@ const path = require("path");
 const ejsLayouts = require("express-ejs-layouts");
 const session = require("express-session");
 const reminderController = require("./controller/reminder_controller");
-const authController = require("./controller/auth_controller");
 const reminderRoute = require("./routes/reminderRoute");
 const authRoute = require("./routes/authRoute");
 
@@ -29,19 +28,11 @@ const { ensureAuthenticated } = require("./middleware/checkAuth")
 app.use(passport.initialize());
 app.use(passport.session());
 
-
 // Routes start here
-
 app.get("/reminders", ensureAuthenticated, reminderController.list);
 app.use("/reminder", reminderRoute);
 app.use("/auth", authRoute)
-/*
-// Fix this to work with passport! The registration does not need to work, you can use the fake database for this.
-app.get("/register", authController.register);
-app.get("/login", authController.login);
-app.post("/register", authController.registerSubmit);
-app.post("/login", authController.loginSubmit);
-*/
+
 app.get("/weather", ensureAuthenticated, reminderController.getWeather);
 app.get("/friends", ensureAuthenticated, reminderController.friends);
 
